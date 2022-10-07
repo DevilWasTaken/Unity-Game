@@ -2,35 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using crouch = crouching;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode crouchKey = KeyCode.LeftControl;
     public KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Movement")]
     public float walkSpeed;
     public float sprintSpeed;
-    public float crouchSpeed;
-    public float crouchYScale;
-    private float startYScale;
+    public float startYScale;
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
-    float horizontalInput;
-    float verticalInput;
+    private float horizontalInput;
+    private float verticalInput;
     Vector3 moveDirection;
     Rigidbody rb;
-    bool readyToJump;
+    private bool readyToJump;
     public float groundDrag;
-    private static bool blocked;
+    public static bool blocked;
     private RaycastHit Hit;
     
     [Header("Ground Checker")]
     public float playerHeight;
-    public LayerMask Ground;
     public static bool grounded;
 
     [Header("Connections")]
@@ -95,24 +92,14 @@ public class PlayerMovement : MonoBehaviour
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
-
-        if (Input.GetKeyDown(crouchKey))
-        {
-            transform.localScale = new Vector3(transform.localScale.x,crouchYScale, transform.localScale.z);
-            rb.AddForce(Vector3.down * 0.5f,ForceMode.Impulse);
-        }
-        else if (!blocked && !Input.GetKey(crouchKey))
-        {   
-            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
-        }
     }
 
     private void StateHandler()
     {
-        if (Input.GetKey(crouchKey) || (state == MovementState.crouching && blocked))
+        if (Input.GetKey(crouch.crouchKey) || (state == MovementState.crouching && blocked))
         {
             state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
+            moveSpeed = crouch.crouchSpeed;
         }
         else if(grounded && Input.GetKey(sprintKey))
         {

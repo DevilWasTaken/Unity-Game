@@ -755,6 +755,7 @@ GameObject:
   - component: {fileID: 1462912384}
   - component: {fileID: 1462912385}
   - component: {fileID: 1462912386}
+  - component: {fileID: 1462912387}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -809,20 +810,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpKey: 32
-  crouchKey: 306
   sprintKey: 304
   walkSpeed: 3
   sprintSpeed: 6
-  crouchSpeed: 2
-  crouchYScale: 0.5
+  startYScale: 0
   jumpForce: 6
   jumpCooldown: 0.9
   airMultiplier: 0.2
   groundDrag: 5
   playerHeight: 1
-  Ground:
-    serializedVersion: 2
-    m_Bits: 8
   orientation: {fileID: 2063982478}
   textElement: {fileID: 1665273917}
   player: {fileID: 171572876}
@@ -859,6 +855,23 @@ CapsuleCollider:
   m_Height: 2.001834
   m_Direction: 1
   m_Center: {x: 0, y: 0.46672508, z: 0}
+--- !u!114 &1462912387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462912381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6304e94ca485e5e43bc1da57c7d01187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crouchYScale: 0.7
+  startYScale: 1
+  crouchDuration: 2
+  crouchPercent: 0
+  division: 0
 --- !u!1 &1547813882
 GameObject:
   m_ObjectHideFlags: 0
