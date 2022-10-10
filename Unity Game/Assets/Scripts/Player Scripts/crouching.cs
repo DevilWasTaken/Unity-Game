@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PM = PlayerMovement;
+using pm = PlayerMovement;
 
 public class crouching : MonoBehaviour
 {
 
     [Header("Keybinds")]
     public static KeyCode crouchKey = KeyCode.LeftControl;
+    private float verticalInput;
+    private float horizontalInput;
 
     [Header("Movment")]
     public static float crouchSpeed = 2;
@@ -16,18 +18,36 @@ public class crouching : MonoBehaviour
     public float crouchDuration = 2;
     public float crouchPercent = 0;
     public float division = 0;
+    public float slideForce;
+    public float slideTime;
+    public float slideTimer;
+    public static bool sliding;
     private Rigidbody rb;
-    // Start is called before the first frame update
+    private Vector3 moveDirection;
+
+    [Header("Connections")]
+    public Transform orientation;
+    private PlayerMovement pm;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        pm = GetComponent<PlayerMovement>();
         startYScale = transform.localScale.y;
+        sliding = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(crouchKey) && PM.grounded)
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKeyDown(crouchKey))
+        {
+            slideTimer = slideTime;
+        }
+
+        if (Input.GetKey(crouchKey))
         {
             float changesPerSeconds = 0.1f;
             if (crouchPercent < crouchDuration)
@@ -41,8 +61,13 @@ public class crouching : MonoBehaviour
                 transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
                 crouchPercent = crouchDuration;
             }
+            
+            if (Input.GetKey(pm.sprintKey) && slideTimer >= 0 && Input.GetKeyDown(crouchKey) && verticalInput > 0)
+            {
+                sliding = true;
+            }
         }
-        else if (!PM.blocked && !Input.GetKey(crouchKey))
+        else if (!pm.blocked && !Input.GetKey(crouchKey))
         {
             float changesPerSeconds = 0.1f;
             if (crouchPercent > 0)
@@ -57,6 +82,32 @@ public class crouching : MonoBehaviour
                 transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
                 crouchPercent = 0;
             }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (sliding)
+        {
+            SlidingMovement();
+        }
+    }
+
+    private void SlidingMovement()
+    {
+        moveDirection = orientation.forward * 1 + orientation.right * horizontalInput;
+        if (!pm.Onslope() || rb.velocity.y > 0)
+        {
+            rb.AddForce(moveDirection * slideForce, ForceMode.Force);
+            slideTimer -= Time.deltaTime;
+            if((slideTimer <= 0 || Input.GetKeyUp(crouchKey)) && pm.grounded)
+            {
+                sliding = false;
+            }
+        }
+        else
+        {
+            rb.AddForce(pm.GetSlopeMoveDirection(moveDirection) * slideForce, ForceMode.Force);
         }
     }
 }

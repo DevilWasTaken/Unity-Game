@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode sprintKey = KeyCode.LeftShift;
+    public static KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Movement")]
     public float walkSpeed;
@@ -34,20 +34,21 @@ public class PlayerMovement : MonoBehaviour
     public Transform orientation;
     public Text textElement;
     public Transform player;
-    public Transform cube;
+    public Transform Debug;
 
     [Header("Slope Handling")]
     public float maxSlope;
     private RaycastHit slopeHit;
     private bool exitingSlope;
     private float moveSpeed;
-    private MovementState state;
+    public static MovementState state;
 
     public enum MovementState
     {
         walking,
         sprinting,
         crouching,
+        sliding,
         air
     }
 
@@ -67,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         StateHandler();
         blocked = Physics.SphereCast(transform.position, 0.5f, Vector3.up, out Hit, playerHeight);
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f);
+        //Debug.position = (Raycast here).point; this is for debuging raycasts
         if (grounded)
         {
             rb.drag = groundDrag;
@@ -123,11 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Onslope() && !exitingSlope)
         {
-            rb.AddForce(GetSlopeMoveDirection() * moveSpeed * 10f, ForceMode.Force);
-            if (rb.velocity.y < 0)
-            {
-                rb.AddForce(Vector3.down * 80f, ForceMode.Force);
-            }
+            rb.AddForce(GetSlopeMoveDirection(moveDirection) * moveSpeed * 10f, ForceMode.Force);
         }
         else if (grounded)
         {
@@ -175,9 +173,9 @@ public class PlayerMovement : MonoBehaviour
         exitingSlope = false;
     }
 
-    private bool Onslope()
+    public bool Onslope()
     {
-        if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.3f))
+        if(Physics.SphereCast(transform.position, 0.5f, Vector3.down, out slopeHit, playerHeight * 0.1f))
         {
             float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
             return angle < maxSlope && angle != 0;
@@ -186,8 +184,8 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
        
-    private Vector3 GetSlopeMoveDirection()
+    public Vector3 GetSlopeMoveDirection(Vector3 direction)
     {
-        return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
+        return Vector3.ProjectOnPlane(direction, slopeHit.normal).normalized;
     }
 }
