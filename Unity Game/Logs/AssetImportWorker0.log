@@ -1,0 +1,602 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'en' Physical Memory: 16361 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/User/Documents/GitHub/Unity-Game/Unity Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64047
+Successfully changed project path to: C:/Users/User/Documents/GitHub/Unity-Game/Unity Game
+C:/Users/User/Documents/GitHub/Unity-Game/Unity Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 197.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/Unity-Game/Unity Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c81)
+    Vendor:   NVIDIA
+    VRAM:     1977 MB
+    Driver:   31.0.15.2225
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.028005 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 207.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.389 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1390ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (960ms)
+			LoadAssemblies (162ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (204ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (599ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (208ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (277ms)
+				ProcessInitializeOnLoadMethodAttributes (94ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.028364 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Unity-Game\Unity Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Unity-Game\Unity Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 177.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.208 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2209ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1804ms)
+			LoadAssemblies (173ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (532ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (949ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (178ms)
+				BeforeProcessingInitializeOnLoad (216ms)
+				ProcessInitializeOnLoadAttributes (398ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (0.7 MB). Loaded Objects now: 5569.
+Memory consumption went from 198.9 MB to 198.2 MB.
+Total: 5.673500 ms (FindLiveObjects: 0.631400 ms CreateObjectMapping: 0.714700 ms MarkObjects: 3.907700 ms  DeleteObjects: 0.418000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2977.324747 seconds.
+  path: Assets/New Universal Render Pipeline Asset.asset
+  artifactKey: Guid(bc4f03e0983f3f043a8529f06bb381b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Universal Render Pipeline Asset.asset using Guid(bc4f03e0983f3f043a8529f06bb381b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 1.440304 seconds  code(4) message(Build asset version error: assets/new universal render pipeline asset.asset in SourceAssetDB has modification time of '2022-10-18T20:52:55.6903096Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff772e3f07d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff772e45d59 (Unity) StackWalker::ShowCallstack
+0x00007ff773db55f3 (Unity) GetStacktrace
+0x00007ff774150af4 (Unity) GetAssetHashAndValidate
+0x00007ff77414c328 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff77414a2fd (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff7740d2228 (Unity) CreateAssetVersionBuilder
+0x00007ff7740d8d83 (Unity) ImportToObjects
+0x00007ff7740d7ab3 (Unity) ImportAsset
+0x00007ff7740fa452 (Unity) AssetImportWorker::Import
+0x00007ff77415f714 (Unity) <lambda_28a9dd63239995ea16631cf66756f7a6>::operator()
+0x00007ff7741a1222 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff77418d10e (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff77418ed74 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff77419f60e (Unity) IOService::Run
+0x00007ff77417239f (Unity) AssetImportWorkerClient::Run
+0x00007ff77413c943 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77413c9cb (Unity) RunAssetImporterV2
+0x00007ff773962418 (Unity) Application::InitializeProject
+0x00007ff773dbfd38 (Unity) WinMain
+0x00007ff7751464ae (Unity) __scrt_common_main_seh
+0x00007ffd084e7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd086226a1 (ntdll) RtlUserThreadStart
+)
+  ERROR: Build asset version error: assets/new universal render pipeline asset.asset in SourceAssetDB has modification time of '2022-10-18T20:52:55.6903096Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff772e3f07d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff772e45d59 (Unity) StackWalker::ShowCallstack
+0x00007ff773db55f3 (Unity) GetStacktrace
+0x00007ff774150af4 (Unity) GetAssetHashAndValidate
+0x00007ff77414c328 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff77414a2fd (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff7740d2228 (Unity) CreateAssetVersionBuilder
+0x00007ff7740d8d83 (Unity) ImportToObjects
+0x00007ff7740d7ab3 (Unity) ImportAsset
+0x00007ff7740fa452 (Unity) AssetImportWorker::Import
+0x00007ff77415f714 (Unity) <lambda_28a9dd63239995ea16631cf66756f7a6>::operator()
+0x00007ff7741a1222 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff77418d10e (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff77418ed74 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff77419f60e (Unity) IOService::Run
+0x00007ff77417239f (Unity) AssetImportWorkerClient::Run
+0x00007ff77413c943 (Unity) RunAssetImportWorkerClientV2
+0x00007ff77413c9cb (Unity) RunAssetImporterV2
+0x00007ff773962418 (Unity) Application::InitializeProject
+0x00007ff773dbfd38 (Unity) WinMain
+0x00007ff7751464ae (Unity) __scrt_common_main_seh
+0x00007ffd084e7034 (KERNEL32) BaseThreadInitThunk
+0x00007ffd086226a1 (ntdll) RtlUserThreadStart
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/New Universal Render Pipeline Asset_Renderer.asset
+  artifactKey: Guid(4a6edd51352aab5428996166938941d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Universal Render Pipeline Asset_Renderer.asset using Guid(4a6edd51352aab5428996166938941d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b676c39e55e322da8fb05f54732acf11') in 0.037456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.640183 seconds.
+  path: Assets/URP.asset
+  artifactKey: Guid(8f4a2e9b6a42b484cadb3a28307b9fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP.asset using Guid(8f4a2e9b6a42b484cadb3a28307b9fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2276d6966ffac0d10bcdd47ddd02f653') in 0.032613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/URP_Renderer.asset
+  artifactKey: Guid(543fdb5645b4fd54687bb2dab7dfa4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP_Renderer.asset using Guid(543fdb5645b4fd54687bb2dab7dfa4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be65b415000eacb0a114f40d7ed1e077') in 0.029852 seconds 
+========================================================================
+Received Prepare
+Switching render pipeline 00000000000000000000000000000000 -> 8f4a2e9b6a42b484cadb3a28307b9fb5
+Refreshing native plugins compatible for Editor in 9.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 78 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 5618.
+Memory consumption went from 94.9 MB to 94.2 MB.
+Total: 6.658100 ms (FindLiveObjects: 0.531600 ms CreateObjectMapping: 0.932400 ms MarkObjects: 4.809600 ms  DeleteObjects: 0.383300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 115.094659 seconds.
+  path: Assets/URP_Renderer.asset
+  artifactKey: Guid(543fdb5645b4fd54687bb2dab7dfa4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP_Renderer.asset using Guid(543fdb5645b4fd54687bb2dab7dfa4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3854d0e57c71797c9ac34cbfe3f96ed3') in 0.011401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/URP.asset
+  artifactKey: Guid(8f4a2e9b6a42b484cadb3a28307b9fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP.asset using Guid(8f4a2e9b6a42b484cadb3a28307b9fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67da664d493c6256d2d4342ef7fb3d6') in 0.006275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(30ab7e053b681e44faaa95633579fba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(30ab7e053b681e44faaa95633579fba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd8f29634829c6c0372ca4a6eb9b973') in 0.016693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 372.500252 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g987.png
+  artifactKey: Guid(f7d38564f2930fc4495fcf9ba9976cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g987.png using Guid(f7d38564f2930fc4495fcf9ba9976cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c09ce72a125f51039331f8314c89aa') in 0.154345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1572.png
+  artifactKey: Guid(bbcbd9b2876958a4090057d698f124fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1572.png using Guid(bbcbd9b2876958a4090057d698f124fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8e5500350ad260a00154d19c0355b3a') in 0.024792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1462.png
+  artifactKey: Guid(9d27172b2c787a84089c76be78607c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1462.png using Guid(9d27172b2c787a84089c76be78607c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf03b8bd5f64f8dfb26a3f532b03634') in 0.032789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1610.png
+  artifactKey: Guid(ebed7cfe1b117dd4eb51a200dc46a242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1610.png using Guid(ebed7cfe1b117dd4eb51a200dc46a242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6342b5d26bbc3a0b320b805c4a8c73ff') in 0.038572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1153.png
+  artifactKey: Guid(dd86e81bea20f8242b1f517f39ba825f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1153.png using Guid(dd86e81bea20f8242b1f517f39ba825f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ebfeda6688ae18700593d03c0c2044') in 0.048112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1630.png
+  artifactKey: Guid(cd77e95c0601ea74d9f0bc182c4c4bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1630.png using Guid(cd77e95c0601ea74d9f0bc182c4c4bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7420380badc44d0d300050708bcd48') in 0.040712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1788.png
+  artifactKey: Guid(19dcc76473a82dc45ae29de3cedcf2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1788.png using Guid(19dcc76473a82dc45ae29de3cedcf2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454f7efdf3a71a42b40e5922b0b678b6') in 0.043924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g2520.png
+  artifactKey: Guid(8ab4c5cffa4be5040be6224f3d7cdac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g2520.png using Guid(8ab4c5cffa4be5040be6224f3d7cdac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f65e7512f2a8e1be7f7d30ebc154b9b') in 0.038427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1972.png
+  artifactKey: Guid(9976976cf79bd0b4490cb214d402338f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/g1972.png using Guid(9976976cf79bd0b4490cb214d402338f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea0ef3fa6e2106ae7e3674c743a808f') in 0.047720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/prototype.png
+  artifactKey: Guid(216fe8c26226ce645b01dca93ffac969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Textures/Grey/prototype.png using Guid(216fe8c26226ce645b01dca93ffac969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba72294bb092d5ab8ebf689caf0290a3') in 0.037220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 96.718804 seconds.
+  path: Assets/Materials/Player.mat
+  artifactKey: Guid(b547ae637a1cea846aa85725b884e4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player.mat using Guid(b547ae637a1cea846aa85725b884e4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b7c9eb3ecb4b0c5541d721ee205a20') in 0.302841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.277030 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue
+  artifactKey: Guid(4a972dc3ce456b44fa0c69ba45756781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue using Guid(4a972dc3ce456b44fa0c69ba45756781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1815dc33032c1a74171cf7fef491e1e3') in 0.010104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.528029 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_1.mat
+  artifactKey: Guid(880bf59141236224d8a8d9d3fd430708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_1.mat using Guid(880bf59141236224d8a8d9d3fd430708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45f3051017a9b675695cf012ac20271') in 0.034172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_10.mat
+  artifactKey: Guid(8f7fc12728facfe4e9b81cf4edb4c058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_10.mat using Guid(8f7fc12728facfe4e9b81cf4edb4c058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd964f9f2c9958dcd399e025e456a73e') in 0.039696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_9.mat
+  artifactKey: Guid(9f80c72a7bf0eff4aab3ccbd3d1ab38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_9.mat using Guid(9f80c72a7bf0eff4aab3ccbd3d1ab38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c398123f5fc1f06ff253302dc1b1c1') in 0.033284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_7.mat
+  artifactKey: Guid(cbf017f6bad132c499e0709e3345d080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_7.mat using Guid(cbf017f6bad132c499e0709e3345d080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ce902e4dc08fd83af5809c419c1db0') in 0.036427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_4.mat
+  artifactKey: Guid(fdacfbae24d30ee4b824d4f347c7bb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_4.mat using Guid(fdacfbae24d30ee4b824d4f347c7bb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad4a8cb0c2faddbcf2b6ad2d508fb25') in 0.042516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_8.mat
+  artifactKey: Guid(f18b5c90d872a3a48a459e4b20f7de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_8.mat using Guid(f18b5c90d872a3a48a459e4b20f7de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8745f23be70153768111beac8246504b') in 0.047992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_2.mat
+  artifactKey: Guid(4cc73f247dcc2e841a79a5290b72c2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_2.mat using Guid(4cc73f247dcc2e841a79a5290b72c2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb88a6dfeb5a48558699bdb2d303353') in 0.043358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_6.mat
+  artifactKey: Guid(f7b4e7377158c1740b192553e8edbd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_6.mat using Guid(f7b4e7377158c1740b192553e8edbd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f429dfba4454128494f4cc225a5dd85') in 0.038850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_5.mat
+  artifactKey: Guid(492d5fa4108a8b048ba15a6b364ee09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_5.mat using Guid(492d5fa4108a8b048ba15a6b364ee09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab66c8e02f67a24ae222eebc48d23ff1') in 0.035170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_3.mat
+  artifactKey: Guid(1d1dbf679a83bcb4a85b9af7c0dee44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Blue/Blue_3.mat using Guid(1d1dbf679a83bcb4a85b9af7c0dee44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92617294fd1de316602f2cf86eef443') in 0.038350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.927906 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_1.mat
+  artifactKey: Guid(85cddc73664e22c4b8910f1aa0a99914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_1.mat using Guid(85cddc73664e22c4b8910f1aa0a99914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567ab9a6a82810faf9ec0e37b57d514c') in 0.022217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_7.mat
+  artifactKey: Guid(930acf7ef6b366f4382b5d9078987ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_7.mat using Guid(930acf7ef6b366f4382b5d9078987ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a784dd78dc6a3551ae857545346338') in 0.021241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_10.mat
+  artifactKey: Guid(d5cc106b40f5cec49b57d5386d190865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_10.mat using Guid(d5cc106b40f5cec49b57d5386d190865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bd6cc0397374fbf33d5b84ea4af08a') in 0.021148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_5.mat
+  artifactKey: Guid(007056541b3a773409f252424e186aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_5.mat using Guid(007056541b3a773409f252424e186aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bab7d27941b993e15f0c09b75b6acc4') in 0.021800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_9.mat
+  artifactKey: Guid(7817480cb43be8b409e989b9c4ab0132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_9.mat using Guid(7817480cb43be8b409e989b9c4ab0132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6e206cdb9b9e482648d7c4effab270') in 0.020708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_6.mat
+  artifactKey: Guid(04788ac9bcd13ba4a82acf3bec4a5b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_6.mat using Guid(04788ac9bcd13ba4a82acf3bec4a5b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d8c29fcf2c944e1dcdf3efa909912b') in 0.021525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_4.mat
+  artifactKey: Guid(26b8dd4f94a96fa4fb84b5f77e6dec8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_4.mat using Guid(26b8dd4f94a96fa4fb84b5f77e6dec8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c1ce487c7f8ec7e3b451c762b23fa6') in 0.020524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_2.mat
+  artifactKey: Guid(8a38f2e5b0042f84b803deac4ec21533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_2.mat using Guid(8a38f2e5b0042f84b803deac4ec21533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cbc44d897d2d5900a99583bbd71e86') in 0.020436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_8.mat
+  artifactKey: Guid(31f8586c3bdf8b64dae44a2c2eb66abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Grey/Grey_8.mat using Guid(31f8586c3bdf8b64dae44a2c2eb66abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '993900152474b16f204ad80e2994f883') in 0.020591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 153.741673 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange
+  artifactKey: Guid(1281e3c4e9cd047468e91e974b522733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange using Guid(1281e3c4e9cd047468e91e974b522733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ed2f3780e3e16d95e944c8da8f7559') in 0.010563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.058866 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_1.mat
+  artifactKey: Guid(4464563e826a4d04a890ea6835019aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_1.mat using Guid(4464563e826a4d04a890ea6835019aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f73901ffa7e3069dc7404e58c9b8ff') in 0.040410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_3.mat
+  artifactKey: Guid(99b708e835983d2499c503bb9adb8462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_3.mat using Guid(99b708e835983d2499c503bb9adb8462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208c0125ffed5c2a28ddbe76e5faddaa') in 0.039376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_10.mat
+  artifactKey: Guid(cadbffec3054f9744b906efab90649ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_10.mat using Guid(cadbffec3054f9744b906efab90649ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f2c24f9797e4d6fd468a63b3c88e44') in 0.037502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_8.mat
+  artifactKey: Guid(66319b75c9d86c24db3297850e4d0743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_8.mat using Guid(66319b75c9d86c24db3297850e4d0743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0072eaf61f1d8e26221588c153324445') in 0.037101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_7.mat
+  artifactKey: Guid(b5c538bb0be68cd4188d521dc6e1b43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_7.mat using Guid(b5c538bb0be68cd4188d521dc6e1b43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474fcbcd921688398f1c344fdcf6c247') in 0.033365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_6.mat
+  artifactKey: Guid(3fbb51fb1b141e744a147816eb3565b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_6.mat using Guid(3fbb51fb1b141e744a147816eb3565b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4aca33ada9617f7db65d14b035a986') in 0.037198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_2.mat
+  artifactKey: Guid(93705c8208ed1304b89384dc85d3fb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_2.mat using Guid(93705c8208ed1304b89384dc85d3fb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba489492e7394feab5f0400438c2a9dd') in 0.033400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_9.mat
+  artifactKey: Guid(12ad1df57a06abc4ab37ed5d6d2d5386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_9.mat using Guid(12ad1df57a06abc4ab37ed5d6d2d5386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b18207666c9775793f6686d0d9c6ce') in 0.035319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_5.mat
+  artifactKey: Guid(66540bd7b72fbfb43a532a03ffb6130b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_5.mat using Guid(66540bd7b72fbfb43a532a03ffb6130b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f81e6f7c81d2afa3764df2f88c33c3') in 0.033658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_4.mat
+  artifactKey: Guid(50b72700454ff5a4fa72db5a4ea4938b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/iPoly3D/Prototype Textures/Materials/Orange/Orange_4.mat using Guid(50b72700454ff5a4fa72db5a4ea4938b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43ef9686894e4cc6afd66e67991b15f') in 0.031344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.556030 seconds.
+  path: Assets/Z_Replace/Wispy Sky
+  artifactKey: Guid(7ffd6b55ae3c2ef4791e1a5418c36944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky using Guid(7ffd6b55ae3c2ef4791e1a5418c36944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f074354ece36e298d6fb6a4078cf3a5') in 0.009827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.633329 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials
+  artifactKey: Guid(297298d1ec092b64aab2198cff67ccff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials using Guid(297298d1ec092b64aab2198cff67ccff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4d0eecd9e1c7072677f656834a53f3') in 0.021716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.028730 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispyCubemap.cubemap
+  artifactKey: Guid(3977a445bc0cbf1498161e4f4b99b771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispyCubemap.cubemap using Guid(3977a445bc0cbf1498161e4f4b99b771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9fb2f803d6f2cd656c140840fb77e3') in 0.043747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispyCubemap2.cubemap
+  artifactKey: Guid(08d3eb3caabff3f47ac34c183ff41827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispyCubemap2.cubemap using Guid(08d3eb3caabff3f47ac34c183ff41827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2629859889bda6627215c6e06bb73d9b') in 0.027645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxCubeMat2.mat
+  artifactKey: Guid(794eb5f8516828240b12c676f5aac8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxCubeMat2.mat using Guid(794eb5f8516828240b12c676f5aac8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f20449ba4ba64f754107b93dee4dcc8') in 0.025767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMobileMat2.mat
+  artifactKey: Guid(9f327c06f8120874aa029411cd0352cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMobileMat2.mat using Guid(9f327c06f8120874aa029411cd0352cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6877bc3b2c26dad1f8faeccf19d6c7a3') in 0.279040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMobileMat.mat
+  artifactKey: Guid(03902d0b450add74fa144e9510fd0f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMobileMat.mat using Guid(03902d0b450add74fa144e9510fd0f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ebe57156dc75c7eee538ffa4261357') in 0.043603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxCubeMat.mat
+  artifactKey: Guid(b22d7be7b41d68745aecdfce4c70c426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxCubeMat.mat using Guid(b22d7be7b41d68745aecdfce4c70c426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f31dbd262ffeeec2134b30f97faf998') in 0.031368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMat2.mat
+  artifactKey: Guid(7b621f3d20f81af4785f8576da7910e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMat2.mat using Guid(7b621f3d20f81af4785f8576da7910e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c22fe564f3420d251cc51ab5ba7246') in 0.049329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMat.mat
+  artifactKey: Guid(fb3b9b55c01d2194c816b2d469854e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Materials/WispySkyboxMat.mat using Guid(fb3b9b55c01d2194c816b2d469854e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5529216c45328a5bc87082c5e8bb977c') in 0.032622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.827572 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Demo
+  artifactKey: Guid(75c96fc239c55814ebcd10e28b771f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Demo using Guid(75c96fc239c55814ebcd10e28b771f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8850ff1b89c7d31b09d7a1480250e33b') in 0.009928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.548282 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Extras
+  artifactKey: Guid(a954fc6a976e62446a90a2c04105b646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Extras using Guid(a954fc6a976e62446a90a2c04105b646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbf25ac1e5f6fce5e4b959508b3837f') in 0.009779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.014524 seconds.
+  path: Assets/Z_Replace/Wispy Sky/Extras/SphericalRenderEXR.exr
+  artifactKey: Guid(623f215c9cf5dc04aa628d4dd7b6bd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Z_Replace/Wispy Sky/Extras/SphericalRenderEXR.exr using Guid(623f215c9cf5dc04aa628d4dd7b6bd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb598028ad50cbce38b289680d01b7be') in 0.028303 seconds 
